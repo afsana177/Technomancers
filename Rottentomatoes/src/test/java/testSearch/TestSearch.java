@@ -11,6 +11,6 @@ public class TestSearch  extends CommonAPI {
     public void rottenTomatoPage() throws InterruptedException {
         RottentomatoHome rtmHome = PageFactory.initElements(driver,RottentomatoHome.class);
         Thread.sleep(3000);
-
+    // delete this
     }
 }
