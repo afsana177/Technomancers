@@ -13,8 +13,13 @@ public class FollowUs extends CommonAPI {
     WebElement giveEmailOrPhone;
     @FindBy(how = How.XPATH,using = "//input[@id='pass']")
     WebElement givePassword;
-    @FindBy(css = "a[id='movieMenu']")
-    WebElement movieMenu;
+    @FindBy(xpath = "//a[@class='js-social-tools-btn social-tools__btn social-tools__btn--twitter']")
+    WebElement followOnTwitter;
+    @FindBy(xpath = "//a[@class='js-social-tools-btn social-tools__btn social-tools__btn--pinterest']")
+    WebElement followOnPinterest;
+    @FindBy(xpath = "//a[@class='js-social-tools-btn social-tools__btn social-tools__btn--stumbleupon']")
+    WebElement followOnStumbleUpon;
+
 
     public void followByFacebook() {
         followOnFacebook.click();
@@ -23,8 +28,13 @@ public class FollowUs extends CommonAPI {
         giveEmailOrPhone.sendKeys(email);
         givePassword.sendKeys(password);
     }
-    public void mouseHoverOnMovieMenu(){
-        mouseHoverByCSS("a[id='movieMenu']");
+    public void followByTwitter() {
+        followOnTwitter.click();
     }
-
+    public void followByPinterest(){
+        followOnPinterest.click();
+    }
+    public void followByStumbleUpon(){
+        followOnStumbleUpon.click();
+    }
 }

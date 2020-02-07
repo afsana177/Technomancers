@@ -12,5 +12,4 @@ public class HelpTest extends RottentomatoHome {
         Help help = PageFactory.initElements(driver,Help.class);
         help.clickHelp();
     }
-
 }

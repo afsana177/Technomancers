@@ -26,10 +26,24 @@ public class followUsTest extends RottentomatoHome {
         flwUs.followByFacebook();
         flwUs.signIn("rajib177@yahoo.com", "simple177");
     }
-    @Test
-    public void userCanMouseHoverMovieMenu() throws InterruptedException {
-        FollowUs flw = PageFactory.initElements(driver,FollowUs.class);
-        flw.mouseHoverOnMovieMenu();
-        Thread.sleep(3000);
+    @Test(priority = 4)
+    public void userCanFollowOnTwitter() throws InterruptedException {
+        FollowUs followUs = PageFactory.initElements(driver,FollowUs.class);
+        followUs.followByTwitter();
+        Thread.sleep(2000);
     }
+    @Test(priority = 5)
+    public void userCanFollowOnPinterest() throws InterruptedException {
+        FollowUs followUs = PageFactory.initElements(driver,FollowUs.class);
+        followUs.followByPinterest();
+        Thread.sleep(2000);
+    }
+    @Test(priority = 6)
+    public void userCanFollowOnStumbleUpon() throws InterruptedException {
+        FollowUs followUs = PageFactory.initElements(driver,FollowUs.class);
+        followUs.followByStumbleUpon();
+        Thread.sleep(2000);
+
+    }
+
 }

@@ -10,7 +10,7 @@ public class TestSearch  extends CommonAPI {
     @Test(priority = 1)
     public void rottenTomatoPage() throws InterruptedException {
         RottentomatoHome rtmHome = PageFactory.initElements(driver,RottentomatoHome.class);
+        rtmHome.userGoToRottenTomatoPage();
         Thread.sleep(3000);
-    // delete this
     }
 }
