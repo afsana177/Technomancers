@@ -3,18 +3,51 @@
 
 <suite name="Technomancers Automation Script " parallel="false">
 
-<!--    <parameter name="useCloudEnv" value="false"/>-->
-<!--    <parameter name="cloudEnvName" value="browserstack"/>-->
+    <parameter name="useCloudEnv" value="false"/>
+    <parameter name="cloudEnvName" value="browserstack"/>
     <parameter name="os" value="OS X"/>
-<!--    <parameter name="os_version" value="Mojave"/>-->
+    <parameter name="os_version" value="Mojave"/>
     <parameter name="browserName" value="chrome"/>
-<!--    <parameter name="browserVersion" value="79.0"/>-->
+    <parameter name="browserVersion" value="79.0"/>
     <parameter name="url" value="https://www.rottentomatoes.com"/>
 
     <test name = "RottentomatoeHome">
         <classes>
 
             <class name="testSearch.TestSearch"/>
+            <class name="dataBaseTest.DataTest"/>
+            <class name="fandangoTest.FandanGoFooterTest"/>
+            <class name="fandangoTest.FandangoTest"/>
+            <class name="footerTest.AboutRottenTomatoesTest"/>
+            <class name="footerTest.AdChoicesTest"/>
+            <class name="footerTest.AdvertisingTest"/>
+            <class name="footerTest.CareersTest"/>
+            <class name="footerTest.CriticSubmissionTest"/>
+            <class name="footerTest.DoNotSellMyInfoTest"/>
+            <class name="footerTest.FeedbackTest"/>
+            <class name="footerTest.FollowUsTest"/>
+            <class name="footerTest.HelpTest"/>
+            <class name="footerTest.JoinTheNewsLetterTest"/>
+            <class name="footerTest.LicensingTest"/>
+            <class name="footerTest.PrivacyPolicyNewTest"/>
+            <class name="footerTest.PrivacyPolicyTest"/>
+            <class name="headerTest.AwardLeaderboardTest"/>
+            <class name="headerTest.OscarBallotTest"/>
+            <class name="headerTest.BestMoviesOf2010Test"/>
+            <class name="headerTest.MostAnticipatedMvs2020Test"/>
+            <class name="tagCloudTest.TagCloudTest"/>
+            <class name="testSearch.CriticsBtnTest"/>
+            <class name="testSearch.FreshPicksTest"/>
+            <class name="testSearch.GoldenTomatoAwardsTest"/>
+            <class name="testSearch.HomePageItemsTest"/>
+            <class name="testSearch.MoviesAndTvGuidsTest"/>
+            <class name="testSearch.SearchBarTest"/>
+            <class name="testSearch.SignUpTest"/>
+            <class name="testSearch.TestSearch"/>
+            <class name="testSearch.TomatometerPageTest"/>
+
+
+
         </classes>
     </test>
 

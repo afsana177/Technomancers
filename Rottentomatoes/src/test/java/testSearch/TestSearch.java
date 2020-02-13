@@ -13,4 +13,11 @@ public class TestSearch  extends CommonAPI {
         rtmHome.userGoToRottenTomatoPage();
         Thread.sleep(3000);
     }
+    @Test(priority = 2)
+    public void userGetTicketInfo() throws InterruptedException {
+        RottentomatoHome rtmHome = PageFactory.initElements(driver, RottentomatoHome.class);
+        rtmHome.userGoToRottenTomatoPage();
+        rtmHome.ticketsInfo();
+        Thread.sleep(2000);
+    }
 }

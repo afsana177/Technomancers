@@ -7,8 +7,7 @@ import org.openqa.selenium.support.How;
 
 public class Help extends CommonAPI {
 
-    @FindBy(how = How.XPATH,using = "//a[@id='footer-help']")
-    WebElement help;
+    @FindBy(how = How.XPATH,using = "//a[@id='footer-help']") WebElement help;
 
     public void clickHelp(){
         help.click();

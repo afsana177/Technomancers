@@ -7,8 +7,7 @@ import org.openqa.selenium.support.How;
 
 public class Licensing extends CommonAPI {
 
-    @FindBy (how = How.XPATH,using = "//a[@id='footer-licensing']")
-    WebElement licensing;
+    @FindBy (how = How.XPATH,using = "//a[@id='footer-licensing']") WebElement licensing;
 
     public void clickLicensing(){
         licensing.click();

@@ -7,10 +7,8 @@ import org.openqa.selenium.support.How;
 
 public class SearchBar extends CommonAPI {
 
-    @FindBy(how = How.XPATH,using = "//input[@id='fullscreen-search-term']")
-    WebElement searchItems;
-    @FindBy(how = How.XPATH,using = "//button[@id='fullscreen-search-desktop-search-btn']")
-    WebElement clickSearch;
+    @FindBy(how = How.XPATH,using = "//input[@id='fullscreen-search-term']") WebElement searchItems;
+    @FindBy(how = How.XPATH,using = "//button[@id='fullscreen-search-desktop-search-btn']") WebElement clickSearch;
 
     public void searchMovies(String item) throws InterruptedException {
         searchItems.sendKeys(item);

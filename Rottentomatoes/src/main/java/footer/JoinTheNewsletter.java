@@ -7,16 +7,11 @@ import org.openqa.selenium.support.How;
 
 public class JoinTheNewsletter extends CommonAPI {
 
-    @FindBy(how = How.XPATH,using = "//a[contains(text(),'Join the Newsletter!')]")
-    WebElement joinTheNewsletter;
-    @FindBy(how = How.XPATH,using = "//input[@id='firstName']")
-    WebElement inputFirstName;
-    @FindBy(how = How.XPATH,using = "//input[@id='lastName']")
-    WebElement inputLastName;
-    @FindBy(how = How.XPATH,using = "//input[@id='email']")
-    WebElement inputEmail;
-    @FindBy(how = How.XPATH,using = "//div[@class='btn btn-primary btn-lg btn-join']")
-    WebElement hitJoin;
+    @FindBy(how = How.XPATH,using = "//a[contains(text(),'Join the Newsletter!')]") WebElement joinTheNewsletter;
+    @FindBy(how = How.XPATH,using = "//input[@id='firstName']") WebElement inputFirstName;
+    @FindBy(how = How.XPATH,using = "//input[@id='lastName']") WebElement inputLastName;
+    @FindBy(how = How.XPATH,using = "//input[@id='email']") WebElement inputEmail;
+    @FindBy(how = How.XPATH,using = "//div[@class='btn btn-primary btn-lg btn-join']") WebElement hitJoin;
 
     public void clickJoinTheNewsletter(){
         joinTheNewsletter.click();

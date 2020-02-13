@@ -5,7 +5,7 @@ import home.RottentomatoHome;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
-public class followUsTest extends RottentomatoHome {
+public class FollowUsTest extends RottentomatoHome {
 
     @Test(priority = 1)
     public void userCanFollowOnFacebook() throws InterruptedException {

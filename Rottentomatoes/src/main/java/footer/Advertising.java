@@ -7,8 +7,7 @@ import org.openqa.selenium.support.How;
 
 public class Advertising extends CommonAPI {
 
-    @FindBy(how = How.XPATH,using = "//a[@id='footer-advertise']")
-    WebElement advertising;
+    @FindBy(how = How.XPATH,using = "//a[@id='footer-advertise']") WebElement advertising;
 
     public void clickAdvertising(){
         advertising.click();

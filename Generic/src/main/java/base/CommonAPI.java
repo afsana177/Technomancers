@@ -103,7 +103,7 @@ public class CommonAPI {
         //System.setProperty("webdriver.chrome.driver", "/Users/peoplentech/eclipse-workspace-March2018/SeleniumProject1/driver/chromedriver");
         if(useCloudEnv==true){
             if(cloudEnvName.equalsIgnoreCase("browserstack")) {
-                getCloudDriver(cloudEnvName,browserstack_username,browserstack_accesskey,os,os_version, browserName, browserVersion);
+                getCloudDriver(cloudEnvName,"afsanajahan1","qgaag5MN5azFRp7Q9R4s",os,os_version, browserName, browserVersion);
             }else if (cloudEnvName.equalsIgnoreCase("saucelabs")){
                 getCloudDriver(cloudEnvName,saucelabs_username, saucelabs_accesskey,os,os_version, browserName, browserVersion);
             }

@@ -7,34 +7,24 @@ import org.testng.annotations.Test;
 
 public class HomePageItemsTest extends RottentomatoHome {
 
-    @Test(priority = 1)
-    public void userCanMouseHoverOnItems() throws InterruptedException {
+    @Test
+    public void userCanMouseHoverOnItems() {
         HomePageItems hmpg = PageFactory.initElements(driver,HomePageItems.class);
         hmpg.userCanMouseHoverOnMoviesAndDvds();
-        Thread.sleep(2000);
     }
-    @Test(priority = 2)
-    public void userMouseHoverOnTv() throws InterruptedException {
+    @Test
+    public void userMouseHoverOnTv() {
         HomePageItems hmpg = PageFactory.initElements(driver,HomePageItems.class);
-        hmpg.userCanMouseHoverOnMoviesAndDvds();
         hmpg.userCanMouseHoverOnTv();
-        Thread.sleep(2000);
     }
-    @Test(priority = 3)
+    @Test
     public void userMouseHoverOnNews(){
         HomePageItems hmpg = PageFactory.initElements(driver,HomePageItems.class);
-        hmpg.userCanMouseHoverOnMoviesAndDvds();
-        hmpg.userCanMouseHoverOnTv();
         hmpg.userCanMouseHoverOnNews();
     }
-    @Test(priority = 4)
-    public void userClickOnTicketsAndShowtimes() throws InterruptedException {
+    @Test
+    public void userClickOnTicketsAndShowtimes() {
         HomePageItems hmpg = PageFactory.initElements(driver,HomePageItems.class);
-        hmpg.userCanMouseHoverOnMoviesAndDvds();
-        hmpg.userCanMouseHoverOnTv();
-        hmpg.userCanMouseHoverOnNews();
         hmpg.userCanClickTicketsAndShowtimes();
-        Thread.sleep(3000);
     }
-
 }

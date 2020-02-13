@@ -7,8 +7,7 @@ import org.openqa.selenium.support.How;
 
 public class AboutRottenTomatoes extends CommonAPI {
 
-    @FindBy(how = How.XPATH,using = "//a[@id='footer-about']")
-    WebElement aboutRottenTomatoes;
+    @FindBy(how = How.XPATH,using = "//a[@id='footer-about']") WebElement aboutRottenTomatoes;
 
     public void clickAboutRottenTomatoes(){
         aboutRottenTomatoes.click();

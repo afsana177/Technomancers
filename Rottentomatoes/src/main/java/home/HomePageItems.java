@@ -6,16 +6,11 @@ import org.openqa.selenium.support.FindBy;
 
 public class HomePageItems extends CommonAPI {
 
-    @FindBy(css = "a[id='movieMenu']")
-    WebElement moviesAndDvds;
-    @FindBy(xpath = "//a[@id='tvMenu']")
-    WebElement tv;
-    @FindBy(xpath = "//a[@id='newsMenu']")
-    WebElement news;
-    @FindBy(xpath = "//a[@id='ticketingMenu']")
-    WebElement ticketsAndShowtimes;
-    @FindBy(xpath = "//a[contains(text(),'Awards Leaderboard')]")
-    WebElement awardsLeaderboard;
+    @FindBy(css = "a[id='movieMenu']") WebElement moviesAndDvds;
+    @FindBy(xpath = "//a[@id='tvMenu']") WebElement tv;
+    @FindBy(xpath = "//a[@id='newsMenu']") WebElement news;
+    @FindBy(xpath = "//a[@id='ticketingMenu']") WebElement ticketsAndShowtimes;
+
 
     public void userCanMouseHoverOnMoviesAndDvds(){
         mouseHoverByCSS("a[id='movieMenu']");
@@ -28,8 +23,5 @@ public class HomePageItems extends CommonAPI {
     }
     public void userCanClickTicketsAndShowtimes(){
         ticketsAndShowtimes.click();
-    }
-    public void userCanClickAwardLeaderboard(){
-        awardsLeaderboard.click();
     }
 }
